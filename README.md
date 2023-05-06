@@ -45,29 +45,24 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+## About the app
 ```
+This is a Nest.js app which acts as a proxy for DuckDuckGo.
+First Steps:
+1.Pull the app from the master branch of the repo
+2.run -> npm install
+3.run -> npm run start:dev/start
 
-## Support
+You should be good to go.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+API capabitilites:
+1.Return related topics regarding a specific query from DuckDuckGo
+2.Storing search history in a local file.
+3.Updating and deleting local history.
+4.Processing of DuckDuckGo data so only the most relevant data will be outputted.
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Technical overview:
+1.HTTP requests management - axios.
+2.Storing search history cache - fs.
+3.Built as a single route with 3 endpoints.
+```
